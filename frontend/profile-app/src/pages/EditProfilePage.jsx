@@ -60,7 +60,7 @@ const EditProfilePage = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8 px-4">
+    <div className="min-h-10 bg-gray-50 py-8 px-4">
       <div className="max-w-lg mx-auto">
         
         <div className="text-center mb-8">
@@ -74,7 +74,7 @@ const EditProfilePage = () => {
         </div>
 
       
-        <div className="bg-white rounded-2xl shadow-xl p-8">
+        <div className="bg-white  rounded-2xl shadow-xl p-8">
           <form onSubmit={handleSubmit} className="space-y-6">
             {["name", "email", "mobileNumber", "city", "pincode"].map((field) => (
               <div key={field}>
@@ -86,7 +86,7 @@ const EditProfilePage = () => {
                   name={field}
                   value={formData[field]}
                   onChange={handleChange}
-                  className="w-full border-2 border-gray-200 px-4 py-3 rounded-xl focus:border-blue-500 focus:ring-4 focus:ring-blue-100 transition-all duration-200 outline-none text-gray-800"
+                  className="w-full border-2 h-10 border-gray-200 px-4 py-3 rounded-xl focus:border-blue-500 focus:ring-4 focus:ring-blue-100 transition-all duration-200 outline-none text-gray-800"
                   placeholder={`Enter your ${field === "mobileNumber" ? "mobile number" : field}`}
                   required
                 />

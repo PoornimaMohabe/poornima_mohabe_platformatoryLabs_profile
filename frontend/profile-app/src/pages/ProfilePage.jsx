@@ -23,7 +23,7 @@ const ProfilePage = () => {
  
  
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-r from-indigo-100 via-indigo-100 to-pink-100 text-white py-12 px-4">
       <div className="max-w-md mx-auto">
        
         <div className="bg-white rounded-3xl shadow-2xl overflow-hidden relative">
