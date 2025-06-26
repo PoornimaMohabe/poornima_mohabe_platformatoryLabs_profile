@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
+import { BASE_URL } from "../../utils/url";
 
 const EditProfilePage = () => {
   const { id: userId } = useParams();
