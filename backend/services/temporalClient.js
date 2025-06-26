@@ -1,5 +1,6 @@
 const { Connection, WorkflowClient } = require('@temporalio/client');
 
+
 const startUpdateProfileWorkflow = async (profileId, data) => {
     const connection = await Connection.connect();
     const client = new WorkflowClient({ connection });
