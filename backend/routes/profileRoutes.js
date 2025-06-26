@@ -1,8 +1,10 @@
 const express = require("express");
-const { getProfile, updateProfile } = require("../controllers/profileController");
-const router = express.Router();
+const { getProfile, updateProfile, createProfile, getAllProfile } = require("../controllers/profileController");
+const profileRoutes = express.Router();
 
-router.get("/:id", getProfile);
-router.put("/:id", updateProfile);
+profileRoutes.post("/", createProfile);
+profileRoutes.get("/", getAllProfile)
+profileRoutes.get("/:id", getProfile);
+profileRoutes.put("/:id", updateProfile);
 
-module.exports = router;
+module.exports = profileRoutes;
