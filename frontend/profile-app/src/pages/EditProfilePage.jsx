@@ -17,7 +17,7 @@ const EditProfilePage = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4500/api/profile/${userId}`)
+      .get(`${BASE_URL}/api/profile/${userId}`)
       .then((res) => {
         setFormData(res.data);
         setLoading(false);
@@ -39,7 +39,7 @@ const EditProfilePage = () => {
     e.preventDefault();
     setSaving(true);
     try {
-      await axios.put(`http://localhost:4500/api/profile/${userId}`, formData);
+      await axios.put(`${BASE_URL}/api/profile/${userId}`, formData);
       alert("Profile updated successfully!");
       navigate(`/profile?id=${userId}`);
     } catch (err) {

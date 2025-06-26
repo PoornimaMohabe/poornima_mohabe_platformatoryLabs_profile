@@ -1,8 +1,9 @@
 import React from "react";
+import { BASE_URL } from "../../utils/url";
 
 const LoginPage = () => {
   const handleLogin = () => {
-    window.open("http://localhost:4500/auth/google", "_self");
+    window.open(`${BASE_URL}/auth/google`, "_self");
   };
 
   return (

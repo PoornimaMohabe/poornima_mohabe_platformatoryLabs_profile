@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { BASE_URL } from "../../utils/url";
 
 const ProfilePage = () => {
   const [user, setUser] = useState(null);
@@ -12,7 +13,7 @@ const ProfilePage = () => {
   useEffect(() => {
     if (userId) {
       axios
-        .get(`http://localhost:4500/api/profile/${userId}`)
+        .get(`${BASE_URL}/api/profile/${userId}`)
         .then((res) => setUser(res.data))
         .catch((err) => console.error(err.message));
     }

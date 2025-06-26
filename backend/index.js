@@ -8,13 +8,14 @@ const mongoose = require("mongoose");
 const profileRoutes = require("./routes/profileRoutes");
 const { connectiondb } = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
+const { FRONT_URL } = require("./utils/url");
 
 
 dotenv.config();
 require("./auth/google");
 
 const app = express();
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: FRONT_URL, credentials: true }));
 app.use(express.json());
 app.use(session({ secret: process.env.SESSION_SECRET, resave: false, saveUninitialized: false }));
 app.use(passport.initialize());
