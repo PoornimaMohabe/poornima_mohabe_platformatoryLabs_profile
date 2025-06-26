@@ -43,6 +43,7 @@ const EditProfilePage = () => {
       alert("Profile updated successfully!");
       navigate(`/profile?id=${userId}`);
     } catch (err) {
+      
       console.error("Update failed:", err.message);
       alert("Failed to update profile.");
     } finally {
