@@ -1,4 +1,4 @@
-# 🌐 Platformtory Profile App – By Purnima Mohbe
+# 🌐 Platformtory Profile App – By Purnima Mohabe
 
 A full-stack profile management app built with:
 - 🧠 Google OAuth Login (Passport.js)
@@ -112,7 +112,7 @@ Async error handling
 Worker-based orchestration (Temporal)
 
 🤝 Contact
-Developed by: Purnima Mohbe
+Developed by: Purnima Mohabe
 Reach out on: LinkedIn
 
 
