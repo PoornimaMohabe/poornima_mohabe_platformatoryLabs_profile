@@ -79,6 +79,13 @@ npx ts-node worker.js
 * Live link 
 ###  https://poornima-mohabe-platformatory-labs.vercel.app/
 
+## Home Page
+![Home Page]([https://raw.githubusercontent.com/YourUsername/YourRepo/main/src/assets/images/githubhome.png](https://raw.githubusercontent.com/PoornimaMohabe/poornima_mohabe_platformatoryLabs_profile/refs/heads/main/frontend/profile-app/src/assets/images/Profile.png))
+
+## Profile Page
+![Vendors Page]([https://raw.githubusercontent.com/YourUsername/YourRepo/main/src/assets/images/githubvendor.png](https://raw.githubusercontent.com/PoornimaMohabe/poornima_mohabe_platformatoryLabs_profile/refs/heads/main/frontend/profile-app/src/assets/images/image.png))
+
+
 📡 API Endpoints
 Method	Endpoint	Description
 GET	/auth/google	Google login
