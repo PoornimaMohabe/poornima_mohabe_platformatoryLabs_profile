@@ -9,11 +9,11 @@ const ProfilePage = () => {
 
   const urlParams = new URLSearchParams(window.location.search);
   const userId = urlParams.get("id"); 
-
+ const url = `${BASE_URL}/api/profile/${userId}`
   useEffect(() => {
     if (userId) {
       axios
-        .get(`${BASE_URL}/api/profile/${userId}`)
+        .get(url)
         .then((res) => setUser(res.data))
         .catch((err) => console.error(err.message));
     }
@@ -34,7 +34,7 @@ const ProfilePage = () => {
             <div className="relative z-10">
               <div className="w-24 h-24 mx-auto mb-6 rounded-full border-4 border-white shadow-xl overflow-hidden bg-white">
                 <img
-                  src={user.picture || "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=96&h=96&q=80"}
+                  src={user.profileImage || "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=96&h=96&q=80"}
                   alt="profile"
                   className="w-full h-full object-cover"
                 />
