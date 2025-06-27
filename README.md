@@ -80,10 +80,10 @@ npx ts-node worker.js
 ###  https://poornima-mohabe-platformatory-labs.vercel.app/
 
 ## Home Page
-![Home Page]([https://raw.githubusercontent.com/YourUsername/YourRepo/main/src/assets/images/githubhome.png](https://raw.githubusercontent.com/PoornimaMohabe/poornima_mohabe_platformatoryLabs_profile/refs/heads/main/frontend/profile-app/src/assets/images/Profile.png))
+![Home Page](https://github.com/PoornimaMohabe/poornima_mohabe_platformatoryLabs_profile/blob/main/frontend/profile-app/src/assets/images/Profile.png?raw=true)
 
 ## Profile Page
-![Vendors Page]([https://raw.githubusercontent.com/YourUsername/YourRepo/main/src/assets/images/githubvendor.png](https://raw.githubusercontent.com/PoornimaMohabe/poornima_mohabe_platformatoryLabs_profile/refs/heads/main/frontend/profile-app/src/assets/images/image.png))
+![Vendors Page](https://github.com/PoornimaMohabe/poornima_mohabe_platformatoryLabs_profile/blob/main/frontend/profile-app/src/assets/images/image.png?raw=true)
 
 
 📡 API Endpoints
